@@ -11,5 +11,4 @@ urlpatterns = [
     path('comment/', CommentCreateView.as_view(), name='comment'),
     path('<int:image>/comment/', CommentList.as_view(), name='comment-list'),
     path('<int:image>/comment/<int:comment>', CommentRUD.as_view(), name='comment-rud'),
-
 ]
